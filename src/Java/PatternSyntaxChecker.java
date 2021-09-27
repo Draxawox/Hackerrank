@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;

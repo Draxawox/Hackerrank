@@ -1,3 +1,5 @@
+package Java;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -54,10 +56,7 @@ class MyMath {
                     c++;
                 }
             }
-            if (c == 1) {
-                return true;
-            }
-            return false;
+            return c == 1;
         };
     }
     public static PerformOperation isPalindrome() {

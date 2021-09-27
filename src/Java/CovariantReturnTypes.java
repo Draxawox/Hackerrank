@@ -1,3 +1,5 @@
+package Java;
+
 public class CovariantReturnTypes {
     class Flower {
         String whatsYourName() {

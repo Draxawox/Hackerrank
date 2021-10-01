@@ -18,12 +18,13 @@ public class PlusMinus {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        Result.plusMinus(arr);
+        Resultt.plusMinus(arr);
 
         bufferedReader.close();
     }
 }
-class Result {
+
+class Resultt {
 
     /*
      * Complete the 'plusMinus' function below.
@@ -33,7 +34,21 @@ class Result {
 
     public static void plusMinus(List<Integer> arr) {
         // Write your code here
-
+        double cPlus = 0;
+        double cMinus = 0;
+        double cZero = 0;
+        for (Integer integer : arr) {
+            if (integer > 0) {
+                cPlus++;
+            } else if (integer < 0) {
+                cMinus++;
+            } else {
+                cZero++;
+            }
+        }
+        System.out.println(cPlus / arr.size());
+        System.out.println(cMinus / arr.size());
+        System.out.println(cZero / arr.size());
     }
 
 }
